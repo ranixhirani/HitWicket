@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hit Wicket Live</title>
+</head>
+<body>
+    <header>
+        <nav class="top-navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="quote">
+                <p>"Let's Watch Cricket!"</p>
+            </div>
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchButton">Search</button>
+            </div>
+        </nav>
+    </header>
+    <nav class="main-navbar">
+        <ul>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Team Info</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="scoreboard">
+        <div class="timestamp">
+            <p id="matchTime">Match Time: 18:30</p>
+        </div>
+        <div class="teams">
+            <div class="team">
+                <h2>India</h2>
+                <p>Runs: <span id="teamARuns">0</span></p>
+                <p>Wickets: <span id="teamAWickets">0</span></p>
+            </div>
+            <div class="team">
+                <h2>Australia</h2>
+                <p>Runs: <span id="teamBRuns">0</span></p>
+                <p>Wickets: <span id="teamBWickets">0</span></p>
+            </div>
+        </div>
+        <div class="match-info">
+            <p>Overs: <span id="overs">0</span></p>
+            <p>Target: <span id="target">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
